@@ -3,7 +3,7 @@ import { addMessage, setLoading } from "../redux/chatSlice";
 import { useState, useRef, useEffect } from "react";
 import axios from "axios";
 
-const BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000";
+const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 export default function ChatBox() {
   const messages = useSelector((state) => state.chat.messages);
