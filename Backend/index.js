@@ -6,7 +6,12 @@ const axios = require("axios");
 dotenv.config();
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://ai-support-chatbot-yv.vercel.app/", 
+    credentials: true,
+  })
+);
 app.use(express.json());
 
 const PORT = process.env.PORT || 8001;
