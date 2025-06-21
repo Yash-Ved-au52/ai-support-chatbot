@@ -30,21 +30,27 @@ Designed to handle user queries like a virtual assistant with full conversation 
 ---
 ## 📁 Project Structure
 
+```Bash
 ai-support-chatbot/
-├── frontend/ # React-based chat UI
-│ ├── src/
-│ │ ├── components/
-│ │ ├── App.js
-│ │ └── index.js
-│ └── package.json
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── assets/
+│   │   ├── App.js
+│   │   ├── index.js
+│   ├── .env
+│   └── package.json
 │
-├── backend/ # Express backend to handle Gemini API
-│ ├── index.js
-│ ├── .env
-│ └── package.json
+├── backend/
+│   ├── .gitignore
+│   ├── .env
+│   ├── index.js
+│   └── package.json
 │
 ├── LICENSE
 └── README.md
+```
 
 ---
 
